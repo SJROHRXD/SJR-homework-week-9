@@ -13,7 +13,7 @@ ${data.urepo}
 
 ## Screenshots ##
 
-![image](${data.usshots})
+<img src="${data.usshots}">
 
 ## Table of Contents ##
 

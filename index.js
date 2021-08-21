@@ -35,27 +35,11 @@ const questions = [
         type: "input",
         message: "Enter the title of your project.",
         name: "uproj",
-    },
-    {
-        // PROJECT SCREENSHOTS - CONFIRM 🌷
-        type: "confirm",
-        message: "Add screenshot? ",
-        name: "uaddsshots",
-        default: false, // if TRUE then...
     },   
     {   // PROJECT SCREENSHOTS 🌷
         type: "input",
 		name: "usshots",
-		message: "Enter image URL. (Try using full RAW link from hosted image on GitHub)",
-		when: function(data) {
-			return data.uaddsshots !== false;
-		},
-		validate: function(imageURL) {
-			if (imageURL) {
-				return true;
-			}
-			return "Please provide image URL.";
-		},
+		message: "Add screenshot? (Try using full RAW link from hosted image on GitHub)",
 	},
     {
         // PROJECT DESCRIPTION 🌷📌
